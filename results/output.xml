@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220407 04:36:18.758" rpa="false" schemaversion="3">
+<suite id="s1" name="Tests" source="C:\Paycharm\E-commerce tests\tests">
+<suite id="s1-s1" name="Main" source="C:\Paycharm\E-commerce tests\tests\main.robot">
+<kw name="Begin Web Test" library="common" type="SETUP">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>about:blank</arg>
+<arg>${Browser}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220407 04:36:18.989" level="INFO">Opening browser 'chrome' to base url 'about:blank'.</msg>
+<status status="PASS" starttime="20220407 04:36:18.988" endtime="20220407 04:36:20.161"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20220407 04:36:20.161" endtime="20220407 04:36:20.279"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:18.988" endtime="20220407 04:36:20.280"/>
+</kw>
+<test id="s1-s1-t1" name="Voir produits diponible" line="11">
+<kw name="Charger la page web" library="PageAccueil">
+<kw name="Go To" library="SeleniumLibrary">
+<arg>${Google_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<msg timestamp="20220407 04:36:20.281" level="INFO">Opening url 'https://www.google.fr/'</msg>
+<status status="PASS" starttime="20220407 04:36:20.281" endtime="20220407 04:36:20.867"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Google</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:20.867" endtime="20220407 04:36:20.884"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>xpath=//*[@id="L2AGLb"]/div</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220407 04:36:20.884" level="INFO">Simulating Mouse Down on element 'xpath=//*[@id="L2AGLb"]/div'.</msg>
+<status status="PASS" starttime="20220407 04:36:20.884" endtime="20220407 04:36:21.172"/>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>xpath=//*[@id="L2AGLb"]/div</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220407 04:36:21.173" level="INFO">Simulating Mouse Up on element 'xpath=//*[@id="L2AGLb"]/div'.</msg>
+<status status="PASS" starttime="20220407 04:36:21.173" endtime="20220407 04:36:21.460"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Images</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:21.460" endtime="20220407 04:36:21.474"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:20.281" endtime="20220407 04:36:21.474"/>
+</kw>
+<kw name="Chercher le site web" library="PageAccueil">
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220407 04:36:21.475" endtime="20220407 04:36:21.519"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>name=q</arg>
+<arg>amazon</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:21.520" level="INFO">Typing text 'amazon' into text field 'name=q'.</msg>
+<status status="PASS" starttime="20220407 04:36:21.519" endtime="20220407 04:36:21.765"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[2]/div/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:21.766" level="INFO">Clicking element 'xpath=/html/body/div[1]/div[2]/div/img'.</msg>
+<status status="PASS" starttime="20220407 04:36:21.765" endtime="20220407 04:36:21.834"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:21.834" level="INFO">Clicking element 'xpath=/html/body/div[1]/div[3]/form/div[1]/div[1]/div[3]/center/input[1]'.</msg>
+<status status="PASS" starttime="20220407 04:36:21.834" endtime="20220407 04:36:22.996"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Images</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:22.997" endtime="20220407 04:36:23.013"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:21.475" endtime="20220407 04:36:23.013"/>
+</kw>
+<kw name="Naviguer vers le site amazon" library="PageAccueil">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:23.015" level="INFO">Clicking element 'xpath=//*[@id="rso"]/div[1]/div/div/div/div/div/div/div[1]/a/h3'.</msg>
+<status status="PASS" starttime="20220407 04:36:23.014" endtime="20220407 04:36:24.286"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Commandes</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:24.286" endtime="20220407 04:36:24.348"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:23.014" endtime="20220407 04:36:24.348"/>
+</kw>
+<kw name="Rechercher le produit" library="PageAccueil">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sp-cc-accept"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:24.349" level="INFO">Clicking element 'xpath=//*[@id="sp-cc-accept"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:24.349" endtime="20220407 04:36:24.537"/>
+</kw>
+<kw name="Clear Element Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="twotabsearchtextbox"]</arg>
+<doc>Clears the value of the text-input-element identified by ``locator``.</doc>
+<status status="PASS" starttime="20220407 04:36:24.538" endtime="20220407 04:36:24.597"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>xpath=//*[@id="twotabsearchtextbox"]</arg>
+<arg>shure sm58</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:24.597" level="INFO">Typing text 'shure sm58' into text field 'xpath=//*[@id="twotabsearchtextbox"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:24.597" endtime="20220407 04:36:24.748"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-search-submit-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:24.749" level="INFO">Clicking element 'xpath=//*[@id="nav-search-submit-button"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:24.749" endtime="20220407 04:36:26.599"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>shure sm58</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:26.599" endtime="20220407 04:36:26.636"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:24.349" endtime="20220407 04:36:26.636"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:20.280" endtime="20220407 04:36:26.636"/>
+</test>
+<test id="s1-s1-t2" name="Choisir un produit" line="17">
+<kw name="Choisir Produit" library="PageProduit">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[7]/div/div/div/div/div[3]/div[1]/h2/a</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:26.638" level="INFO">Clicking link 'xpath=//*[@id="search"]/div[1]/div[1]/div/span[3]/div[2]/div[7]/div/div/div/div/div[3]/div[1]/h2/a'.</msg>
+<status status="PASS" starttime="20220407 04:36:26.638" endtime="20220407 04:36:30.521"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Ajouter au panier</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:30.521" endtime="20220407 04:36:30.571"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:26.638" endtime="20220407 04:36:30.571"/>
+</kw>
+<kw name="Ajouter au panier" library="PageProduit">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="add-to-cart-button"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:30.573" level="INFO">Clicking element 'xpath=//*[@id="add-to-cart-button"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:30.572" endtime="20220407 04:36:30.905"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Assurance</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:30.906" endtime="20220407 04:36:31.009"/>
+</kw>
+<kw name="Mouse Down" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dp-container"]</arg>
+<doc>Simulates pressing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220407 04:36:31.011" level="INFO">Simulating Mouse Down on element 'xpath=//*[@id="dp-container"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:31.010" endtime="20220407 04:36:31.370"/>
+</kw>
+<kw name="Mouse Up" library="SeleniumLibrary">
+<arg>xpath=//*[@id="dp-container"]</arg>
+<doc>Simulates releasing the left mouse button on the element ``locator``.</doc>
+<msg timestamp="20220407 04:36:31.371" level="INFO">Simulating Mouse Up on element 'xpath=//*[@id="dp-container"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:31.370" endtime="20220407 04:36:31.709"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Ajouté au panier</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:31.709" endtime="20220407 04:36:31.749"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:30.572" endtime="20220407 04:36:31.749"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:26.637" endtime="20220407 04:36:31.750"/>
+</test>
+<test id="s1-s1-t3" name="Passer la commande" line="21">
+<kw name="Aller au panier" library="PagePanier">
+<kw name="Click Link" library="SeleniumLibrary">
+<arg>xpath=//*[@id="nav-cart"]</arg>
+<doc>Clicks a link identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:31.753" level="INFO">Clicking link 'xpath=//*[@id="nav-cart"]'.</msg>
+<status status="PASS" starttime="20220407 04:36:31.752" endtime="20220407 04:36:34.012"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Votre panier</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:34.012" endtime="20220407 04:36:34.091"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:31.752" endtime="20220407 04:36:34.091"/>
+</kw>
+<kw name="Passer la commande" library="PagePanier">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>xpath=//*[@id="sc-buy-box-ptc-button"]/span/input</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20220407 04:36:34.092" level="INFO">Clicking element 'xpath=//*[@id="sc-buy-box-ptc-button"]/span/input'.</msg>
+<status status="PASS" starttime="20220407 04:36:34.092" endtime="20220407 04:36:34.997"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>S'identifier</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20220407 04:36:34.998" endtime="20220407 04:36:35.022"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:34.091" endtime="20220407 04:36:35.022"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:31.751" endtime="20220407 04:36:35.023"/>
+</test>
+<kw name="End Web Test" library="common" type="TEARDOWN">
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220407 04:36:35.025" endtime="20220407 04:36:37.192"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:35.025" endtime="20220407 04:36:37.192"/>
+</kw>
+<status status="PASS" starttime="20220407 04:36:18.782" endtime="20220407 04:36:37.192"/>
+</suite>
+<status status="PASS" starttime="20220407 04:36:18.759" endtime="20220407 04:36:37.194"/>
+</suite>
+<statistics>
+<total>
+<stat pass="3" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="3" fail="0" skip="0" id="s1" name="Tests">Tests</stat>
+<stat pass="3" fail="0" skip="0" id="s1-s1" name="Main">Tests.Main</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
